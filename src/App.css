@@ -1,32 +1,64 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #293133;
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#calculator {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 3px 3px 20px;
+  background: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#display {
+  text-align: right;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+#buttons {
+  width: 100%;
+}
+
+#numbers {
+  float: left;
+  width: 165px;
+}
+
+#operators {
+  float: right;
+  width: 120px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#zero, #decimal {
+  float: right;
+}
+
+#clear, #equals {
+  width: 100px;
+}
+
+#operators button {
+  float: right;
 }
