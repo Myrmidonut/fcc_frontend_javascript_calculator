@@ -1,44 +1,40 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class Display extends Component {
-  render() {
-    return (
-      <div id="display">
-        {this.props.display}
-      </div>
-    )
-  }
+const Display = (props) => {
+  return (
+    <div id="display">
+      {props.display}
+    </div>
+  )
 }
 
-class Buttons extends Component {
-  render() {
-    return (
-      <div id="buttons">
-        <div id="numbers">
-          <button id="one" value="1" onClick={this.props.numbers}>1</button>
-          <button id="two" value="2" onClick={this.props.numbers}>2</button>
-          <button id="three" value="3" onClick={this.props.numbers}>3</button>
-          <button id="four" value="4" onClick={this.props.numbers}>4</button>
-          <button id="five" value="5" onClick={this.props.numbers}>5</button>
-          <button id="six" value="6" onClick={this.props.numbers}>6</button>
-          <button id="seven" value="7" onClick={this.props.numbers}>7</button>
-          <button id="eight" value="8" onClick={this.props.numbers}>8</button>
-          <button id="nine" value="9" onClick={this.props.numbers}>9</button>
-          <button id="decimal" value="." onClick={this.props.numbers}>.</button>
-          <button id="zero" value="0" onClick={this.props.numbers}>0</button>
-        </div>
-        <div id="operators">
-          <button id="clear" onClick={this.props.clear}>C</button>
-          <button id="add" value="add" onClick={this.props.operate}>+</button>
-          <button id="subtract" value="subtract" onClick={this.props.operate}>-</button>
-          <button id="multiply" value="multiply" onClick={this.props.operate}>x</button>
-          <button id="divide" value="divide" onClick={this.props.operate}>/</button>
-          <button id="equals" onClick={this.props.equal}>=</button>
-        </div>
+const Buttons = (props) => {
+  return (
+    <div id="buttons">
+      <div id="numbers">
+        <button id="one" value="1" onClick={props.numbers}>1</button>
+        <button id="two" value="2" onClick={props.numbers}>2</button>
+        <button id="three" value="3" onClick={props.numbers}>3</button>
+        <button id="four" value="4" onClick={props.numbers}>4</button>
+        <button id="five" value="5" onClick={props.numbers}>5</button>
+        <button id="six" value="6" onClick={props.numbers}>6</button>
+        <button id="seven" value="7" onClick={props.numbers}>7</button>
+        <button id="eight" value="8" onClick={props.numbers}>8</button>
+        <button id="nine" value="9" onClick={props.numbers}>9</button>
+        <button id="decimal" value="." onClick={props.numbers}>.</button>
+        <button id="zero" value="0" onClick={props.numbers}>0</button>
       </div>
-    )
-  }
+      <div id="operators">
+        <button id="clear" onClick={props.clear}>C</button>
+        <button id="add" value="add" onClick={props.operate}>+</button>
+        <button id="subtract" value="subtract" onClick={props.operate}>-</button>
+        <button id="multiply" value="multiply" onClick={props.operate}>x</button>
+        <button id="divide" value="divide" onClick={props.operate}>/</button>
+        <button id="equals" onClick={props.equal}>=</button>
+      </div>
+    </div>
+  )
 }
 
 class App extends Component {
@@ -65,7 +61,7 @@ class App extends Component {
         this.setState({
           decimal: true
         })
-        if (this.state.display != 0) {
+        if (this.state.display !== 0 && this.state.display !== "0") {
           this.setState({
             display: this.state.display + e.target.value,
             lastInput: "number"
@@ -78,7 +74,7 @@ class App extends Component {
         }
       }
     } else {
-      if (this.state.display != 0) {
+      if (this.state.display !== 0 && this.state.display !== "0") {
         this.setState({
           display: this.state.display + e.target.value,
             lastInput: "number"
@@ -156,7 +152,6 @@ class App extends Component {
           equal={() => this.equal()}
           numbers={(e) => this.numbers(e)}
           clear={() => this.clear()}
-          decimal={() => this.decimal(e)}
           operate={(e) => this.operate(e)} />
       </div>
     )
