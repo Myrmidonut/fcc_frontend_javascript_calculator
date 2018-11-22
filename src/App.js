@@ -27,11 +27,11 @@ const Buttons = (props) => {
       </div>
       <div id="operators">
         <button id="clear" onClick={props.clear}>C</button>
-        <button id="add" value="add" onClick={props.operate}>+</button>
-        <button id="subtract" value="subtract" onClick={props.operate}>-</button>
-        <button id="multiply" value="multiply" onClick={props.operate}>x</button>
-        <button id="divide" value="divide" onClick={props.operate}>/</button>
-        <button id="equals" onClick={props.equal}>=</button>
+        <button id="add" value="add" onClick={props.operate}>{String.fromCharCode(8330)}</button>
+        <button id="subtract" value="subtract" onClick={props.operate}>{String.fromCharCode(8331)}</button>
+        <button id="multiply" value="multiply" onClick={props.operate}>{String.fromCharCode(215)}</button>
+        <button id="divide" value="divide" onClick={props.operate}>{String.fromCharCode(247)}</button>
+        <button id="equals" onClick={props.equal}>{String.fromCharCode(8332)}</button>
       </div>
     </div>
   )
@@ -146,13 +146,20 @@ class App extends Component {
 
   render() {
     return (
-      <div id="calculator">
-        <Display display={this.state.display} />
-        <Buttons
-          equal={() => this.equal()}
-          numbers={(e) => this.numbers(e)}
-          clear={() => this.clear()}
-          operate={(e) => this.operate(e)} />
+      <div className="App">
+        <div id="background" />
+        <div id="color-overlay" />
+        <div id="content">
+          <h1>Calculator</h1>
+          <div id="calculator">
+            <Display display={this.state.display} />
+            <Buttons
+              equal={() => this.equal()}
+              numbers={(e) => this.numbers(e)}
+              clear={() => this.clear()}
+              operate={(e) => this.operate(e)} />
+          </div>
+        </div>
       </div>
     )
   }

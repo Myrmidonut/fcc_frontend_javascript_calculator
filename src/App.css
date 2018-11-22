@@ -1,33 +1,69 @@
-html, body {
-  margin: 0;
+html, body, #root {
   height: 100%;
-  background-color: #293133;
-  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nova Mono', monospace;
 }
 
-#root {
+.App {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background {
   height: 100%;
   width: 100%;
-  display: flex;
+  background-image: url("./typewriter.jpg");
+  background-size: cover;
+  filter: blur(7px);
+}
+
+#color-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(2, 103, 5, 0.205);
+}
+
+#content {
+  position: absolute;
+}
+
+h1 {
+  margin-top: 0;
+  text-shadow: 3px 3px 12px black;
+  color: white;
+  font-size: 100px;
+  text-align: center;
 }
 
 #calculator {
+  padding: 10px;
+  xposition: absolute;
   width: 300px;
   height: 300px;
   margin: auto;
   border: 1px solid black;
   box-shadow: 3px 3px 20px;
-  background: lightgray;
+  background: #667896;
+  border-radius: 20px;
 }
 
 #display {
   text-align: right;
   margin: 5px;
   margin-bottom: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 5px;
+  padding-right: 10px;
   font-size: 20px;
   border: 1px solid black;
+  border-radius: 5px;
+  line-height: 30px;
+  height: 30px;
+  background-color: #8893a7;
 }
 
 #buttons {
@@ -45,10 +81,26 @@ html, body {
 }
 
 button {
+  font-family: 'Nova Mono', monospace;
+  background-color: #303f52;
   width: 45px;
   height: 45px;
   margin: 5px;
   font-size: 20px;
+  color: white;
+  border: 2px solid #37465b;
+  border-radius: 5px;
+  box-shadow: inset -2px -2px 2px rgba(255,255,255,0.3),
+  2px 2px 2px rgba(0,0,0,0.3);
+}
+
+button:active {
+  outline: none;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+button:focus {
+  outline: none;
 }
 
 #zero, #decimal {
@@ -61,4 +113,14 @@ button {
 
 #operators button {
   float: right;
+}
+
+#add, #subtract, #equals {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    display: none;
+  }
 }
