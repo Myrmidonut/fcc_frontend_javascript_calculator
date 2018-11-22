@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/fcc_frontend_javascript_calculator/static/media/typewriter.ae95d1ff.jpg"
   },
   {
-    "revision": "3361927ea62b6dbbf37f56de5630ff5b",
+    "revision": "09c45c560a5248e724f89698fba2a6b7",
     "url": "/fcc_frontend_javascript_calculator/index.html"
   }
 ];
