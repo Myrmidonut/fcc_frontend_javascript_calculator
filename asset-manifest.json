@@ -1,13 +1,14 @@
 {
-  "main.css": "/fcc_frontend_javascript_calculator/static/css/main.587d9498.chunk.css",
-  "main.js": "/fcc_frontend_javascript_calculator/static/js/main.767694a9.chunk.js",
-  "main.js.map": "/fcc_frontend_javascript_calculator/static/js/main.767694a9.chunk.js.map",
+  "main.css": "/fcc_frontend_javascript_calculator/static/css/main.b74cec5a.chunk.css",
+  "main.js": "/fcc_frontend_javascript_calculator/static/js/main.95cef7e5.chunk.js",
+  "main.js.map": "/fcc_frontend_javascript_calculator/static/js/main.95cef7e5.chunk.js.map",
   "static/js/1.37f90d57.chunk.js": "/fcc_frontend_javascript_calculator/static/js/1.37f90d57.chunk.js",
   "static/js/1.37f90d57.chunk.js.map": "/fcc_frontend_javascript_calculator/static/js/1.37f90d57.chunk.js.map",
   "runtime~main.js": "/fcc_frontend_javascript_calculator/static/js/runtime~main.6204062a.js",
   "runtime~main.js.map": "/fcc_frontend_javascript_calculator/static/js/runtime~main.6204062a.js.map",
-  "static/css/main.587d9498.chunk.css.map": "/fcc_frontend_javascript_calculator/static/css/main.587d9498.chunk.css.map",
+  "static/media/App.css": "/fcc_frontend_javascript_calculator/static/media/typewriter.ae95d1ff.jpg",
+  "static/css/main.b74cec5a.chunk.css.map": "/fcc_frontend_javascript_calculator/static/css/main.b74cec5a.chunk.css.map",
   "index.html": "/fcc_frontend_javascript_calculator/index.html",
-  "precache-manifest.4c9eaee378ef1f3a25177e3683d6499a.js": "/fcc_frontend_javascript_calculator/precache-manifest.4c9eaee378ef1f3a25177e3683d6499a.js",
+  "precache-manifest.bc06783bb5b2dc7034566ea32faeda43.js": "/fcc_frontend_javascript_calculator/precache-manifest.bc06783bb5b2dc7034566ea32faeda43.js",
   "service-worker.js": "/fcc_frontend_javascript_calculator/service-worker.js"
 }
