@@ -114,8 +114,8 @@ button:focus {
   float: right;
 }
 
-#add, #subtract, #equals {
-  padding-bottom: 20px;
+#add, #subtract, #multiply, #divide, #equals {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 640px) {

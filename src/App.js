@@ -27,11 +27,11 @@ const Buttons = (props) => {
       </div>
       <div id="operators">
         <button id="clear" onClick={props.clear}>C</button>
-        <button id="add" value="add" onClick={props.operate}>{String.fromCharCode(8330)}</button>
-        <button id="subtract" value="subtract" onClick={props.operate}>{String.fromCharCode(8331)}</button>
-        <button id="multiply" value="multiply" onClick={props.operate}>{String.fromCharCode(215)}</button>
-        <button id="divide" value="divide" onClick={props.operate}>{String.fromCharCode(247)}</button>
-        <button id="equals" onClick={props.equal}>{String.fromCharCode(8332)}</button>
+        <button id="add" value="add" onClick={props.operate}>&#43;</button>
+        <button id="subtract" value="subtract" onClick={props.operate}>&#8722;</button>
+        <button id="multiply" value="multiply" onClick={props.operate}>&#215;</button>
+        <button id="divide" value="divide" onClick={props.operate}>&#247;</button>
+        <button id="equals" onClick={props.equal}>&#61;</button>
       </div>
     </div>
   )
