@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5c17bfbef74fd0e6e26d",
-    "url": "/fcc_frontend_javascript_calculator/static/css/main.ed65a00d.chunk.css"
+    "revision": "b1ad07b81fa7758c2556",
+    "url": "/fcc_frontend_javascript_calculator/static/css/main.874aa39b.chunk.css"
   },
   {
-    "revision": "5c17bfbef74fd0e6e26d",
-    "url": "/fcc_frontend_javascript_calculator/static/js/main.5c17bfbe.chunk.js"
+    "revision": "b1ad07b81fa7758c2556",
+    "url": "/fcc_frontend_javascript_calculator/static/js/main.b1ad07b8.chunk.js"
   },
   {
     "revision": "37f90d57916b981a0157",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/fcc_frontend_javascript_calculator/static/media/typewriter.ae95d1ff.jpg"
   },
   {
-    "revision": "15fc921120c8dd6c7624eda8997b4e01",
+    "revision": "3361927ea62b6dbbf37f56de5630ff5b",
     "url": "/fcc_frontend_javascript_calculator/index.html"
   }
 ];
