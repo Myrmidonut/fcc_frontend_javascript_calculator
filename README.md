@@ -1,1 +1,38 @@
-# fcc_frontend_javascript_calculator
+# JavaScript Calculator
+
+## Introduction
+A calculator with the basic mathematical operations:
+* ×	Multiplication
+* −	Subtraction
+* \+	Addition
+* .	Decimal point
+
+This project is part of freeCodeCamps Frontend Libraries certificate.
+
+## Project Requirements
+* The calculator should contain a clickable element containing an = (equal sign) with a corresponding id="equals".
+* The calculator should contain 10 clickable elements containing one number each from 0-9, with the following corresponding IDs: id="zero", id="one", id="two", id="three", id="four", id="five", id="six", id="seven", id="eight", and id="nine".
+* The calculator should contain 4 clickable elements each containing one of the 4 primary mathematical operators with the following corresponding IDs: id="add", id="subtract", id="multiply", id="divide".
+* The calculator should contain a clickable element containing a . (decimal point) symbol with a corresponding id="decimal".
+* The calculator should contain a clickable element with an id="clear".
+* The calculator should contain an element to display values with a corresponding id="display".
+* At any time, pressing the clear button clears the input and output values, and returns the calculator to its initialized state; 0 should be shown in the element with the id of display.
+* While inputting numbers, the input is visible in the element with the id of display.
+* In any order, it should be possible to add, subtract, multiply and divide a chain of numbers of any length, and when hitting =, the correct result should be shown in the element with the id of display.
+* When inputting numbers, the calculator should not allow a number to begin with multiple zeros.
+* When the decimal element is clicked, a . should append to the currently displayed value; two . in one number should not be accepted.
+* It should be possible to perform any operation (+, -, x, /) on numbers containing decimal points.
+* If 2 or more operators are entered consecutively, the operation performed should be the last operator entered.
+* Pressing an operator immediately following = should start a new calculation that operates on the result of the previous evaluation.
+* The calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).
+* Note On Calculator Logic: It should be noted that there are two main schools of thought on calculator input logic: immediate execution logic and formula logic. Our example utilizes formula logic and observes order of operation precedence, immediate execution does not. Either is acceptable, but please note that depending on which you choose, your calculator may yield different results than ours for certain equations (see below example). As long as your math can be verified by another production calculator, please do not consider this a bug.
+* EXAMPLE: 3 + 5 x 6 - 2 / 4 =
+Immediate Execution Logic: 11.5
+Formula/Expression Logic: 32.5
+
+## Final Project
+https://myrmidonut.github.io/fcc_frontend_javascript_calculator
+
+## Preview Images
+### Main Screen:
+![JavaScript Calculator](readme_images/javascript-calculator.png)
