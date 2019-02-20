@@ -9,6 +9,8 @@ A calculator with the basic mathematical operations:
 
 This project is part of freeCodeCamps Frontend Libraries certificate.
 
+***
+
 ## Project Requirements
 * The calculator should contain a clickable element containing an = (equal sign) with a corresponding id="equals".
 * The calculator should contain 10 clickable elements containing one number each from 0-9, with the following corresponding IDs: id="zero", id="one", id="two", id="three", id="four", id="five", id="six", id="seven", id="eight", and id="nine".
@@ -30,8 +32,12 @@ This project is part of freeCodeCamps Frontend Libraries certificate.
 Immediate Execution Logic: 11.5
 Formula/Expression Logic: 32.5
 
+***
+
 ## Final Project
 https://myrmidonut.github.io/fcc_frontend_javascript_calculator
+
+***
 
 ## Preview Images
 ### Main Screen:
